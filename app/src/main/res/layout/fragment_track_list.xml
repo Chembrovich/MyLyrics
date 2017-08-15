@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epam.androidlab.mylyrics.views.TrackListFragment"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/title_elements_margin"
+            android:text="@string/chart"
+            android:textSize="@dimen/title_text_size" />
+
+        <Spinner
+            android:id="@+id/country_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/country_spinner_margin"
+            android:layout_marginRight="@dimen/country_spinner_margin" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/track_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

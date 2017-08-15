@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_track_list">
+    <ImageView
+        android:id="@+id/album_image_list_view"
+        android:layout_width="@dimen/album_image_list_view_size"
+        android:layout_height="@dimen/album_image_list_view_size"
+        android:layout_margin="@dimen/album_image_list_view_margin"
+        android:layout_gravity="center"
+        android:src="@drawable/no_cover"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/track_name_list_view"
+            android:text="@string/track_name"
+            android:textSize="@dimen/track_name_list_view_size"
+            android:textColor="@color/colorTrackName"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/artist_name_list_view"
+            android:text="@string/artist_name"
+            android:layout_marginTop="@dimen/artist_name_list_view_top_margin"
+            android:textColor="@color/colorArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

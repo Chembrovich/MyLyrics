@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epam.androidlab.mylyrics.views.TrackInfoFragment"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/track_info_header_padding"
+        android:background="@color/colorHeader">
+        <TextView
+            android:id="@+id/track_name_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track_name"
+            android:textSize="@dimen/track_name_info_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorTrackName"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/track_name_info_margin"
+            android:layout_marginStart="@dimen/track_name_info_margin"
+            android:layout_marginLeft="@dimen/track_name_info_margin"
+            android:layout_marginEnd="@dimen/track_name_info_margin"
+            android:layout_marginRight="@dimen/track_name_info_margin" />
+
+        <TextView
+            android:id="@+id/artist_name_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artist_name"
+            android:textColor="@color/colorArtist"
+            android:textSize="@dimen/artist_name_info_size"
+            android:layout_marginLeft="@dimen/track_info_margin"
+            android:layout_marginStart="@dimen/track_info_margin"
+            android:layout_marginRight="@dimen/track_info_margin"
+            android:layout_marginEnd="@dimen/track_info_margin"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/album_name_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/album_name"
+            android:layout_marginTop="@dimen/album_name_info_margin"
+            android:layout_marginLeft="@dimen/track_info_margin"
+            android:layout_marginStart="@dimen/track_info_margin"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/genre_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genre"
+            android:layout_marginLeft="@dimen/track_info_margin"
+            android:layout_marginStart="@dimen/track_info_margin"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lyrics"
+        android:textSize="@dimen/lyrics_title_size"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/scroll_view_track_info_margin">
+
+        <TextView
+            android:id="@+id/lyrics_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="@dimen/track_info_margin"
+            android:layout_marginStart="@dimen/track_info_margin" />
+    </ScrollView>
+</LinearLayout>

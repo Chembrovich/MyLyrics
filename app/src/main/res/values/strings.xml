@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyLyrics</string>
+    <string name="chart">TOP 25 Chart</string>
+    <string name="track_name">Track Name</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="album_name">Album Name: %1$s</string>
+    <string name="genre">Genre: %1$s</string>
+    <string name="lyrics">Lyrics:</string>
+    <string name="default_country">United States</string>
+    <string name="no_connection">There is no internet connection!</string>
+    <string name="no_lyrics">This track has no lyrics</string>
+    <string name="no_genre">No genre</string>
+    <string name="search">Search</string>
+    <string name="no_tracks">There is no tracks</string>
+
+    <string-array name="countries_names_array">
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>Germany</item>
+        <item>Great Britain</item>
+        <item>Italy</item>
+        <item>Russia</item>
+        <item>Spain</item>
+        <item>United States</item>
+    </string-array>
+
+    <string-array name="countries_codes_array">
+        <item>AU</item>
+        <item>CA</item>
+        <item>DE</item>
+        <item>GB</item>
+        <item>IT</item>
+        <item>RU</item>
+        <item>ES</item>
+        <item>US</item>
+    </string-array>
+</resources>
